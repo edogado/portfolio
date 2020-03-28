@@ -1,0 +1,29 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "This is the portfolio where I will show case my projects to recruiters",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edmorales94/portfolio.git"
+  },
+  "keywords": [
+    "Portfolio",
+    "freelancer",
+    "front-end-developer",
+    "developer",
+    "code"
+  ],
+  "author": "Edgar I Morales",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edmorales94/portfolio/issues"
+  },
+  "homepage": "https://github.com/edmorales94/portfolio#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
