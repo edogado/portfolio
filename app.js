@@ -5,6 +5,7 @@ const app = express();
 
 app.use(express.static(path.join(__dirname, "public")));
 
+// noinspection JSUnresolvedFunction
 app.get("/", (req, res)=>{
     res.status(200).render("index")
 });
