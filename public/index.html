@@ -14,26 +14,27 @@
 </head>
 <body>
     <nav class="container">
-    <div class="logo">
-        <a href="index.html"><img src="images/pencil-typography-black-design.jpg" alt="logo"></a>
-    </div>
-    <div class="navbar">
-        <div class="icon-bar" onclick="Show()">
-            <i></i>
-            <i></i>
-            <i></i>
+        <div class="logo">
+            <a href="index.html"><img src="images/pencil-typography-black-design.jpg" alt="logo"></a>
         </div>
+        <div class="navbar">
+            <div class="icon-bar" onclick="Show()">
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>
 
-        <ul id="nav-lists">
-            <li class="close"><span onclick="Hide()">×</span></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Resume</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </div>
-</nav>
+            <ul id="nav-lists">
+                <li class="close"><span onclick="Hide()">×</span></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <section id="background-image" style="background-image: url('images/banner.jpeg');">
         <h1>
             <span class="typewrite" data-period ="3000"
@@ -42,8 +43,55 @@
             </span>
         </h1>
     </section>
-    <section id="about"></section>
-    <section id="projects"></section>
+
+    <section id="about">
+        <div class="section-container">
+            <h1>About Me</h1>
+            <h2>I am Edgar I. Morales</h2>
+            <h3>I'm a software and full-stack web developer based in New York.</h3>
+            <p>I enjoy turning complex problems into simple, beautiful and intuitive designs.
+                <br>I'm always looking for opportunity to learn new technology.
+                <br>I enjoy spending my free time increasing my knowledge of Web Development and working on new projects.
+                <br>I am looking to be part of a team oriented company and bring value to the world.</p>
+        </div>
+    </section>
+    <div class="download-resume">
+        <div class="button">
+            <p>Download Resume</p>
+        </div>
+    </div>
+    <section id="projects">
+        <h1>Projects</h1>
+        <div id="projects-gallery">
+            <div class="project">
+                <h2>FILNYC</h2>
+                <img src="images/project1.png" alt="project image">
+                <p>Description</p>
+                <div class="project-buttons">
+                    <div class="demo"><a href="#">Demo</a></div>
+                    <div class="code"><a href="#">Code</a></div>
+                </div>
+            </div>
+            <div class="project">
+                <h2>FILNYC</h2>
+                <img src="images/project1.png" alt="project image">
+                <p>Description</p>
+                <div class="project-buttons">
+                    <div class="demo"><a href="#">Demo</a></div>
+                    <div class="code"><a href="#">Code</a></div>
+                </div>
+            </div>
+            <div class="project">
+                <h2>FILNYC</h2>
+                <img src="images/project1.png" alt="project image">
+                <p>Description</p>
+                <div class="project-buttons">
+                    <div class="demo"><a href="#">Demo</a></div>
+                    <div class="code"><a href="#">Code</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="resume"></section>
     <section id="technologies"></section>
     <section id="contact"></section>
