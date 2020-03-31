@@ -381,6 +381,16 @@ hr{
     border: none;
     background-color: var(--secondarycolor);
 }
+
+#skills p{
+    display: inline-block;
+    margin: .25rem;
+    padding: .5rem 1.25rem;
+    font-weight: 600;
+    border-radius: 1.25rem;
+    color: var(--primarycolor);
+    background-color: var(--secondarycolor);
+}
 @media only screen and (max-width: 568px) {
     #background-image{
         font-size: 1rem!important;
