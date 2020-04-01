@@ -150,6 +150,7 @@ body{
 #background-image{
     width: 100vw;
     height: 100vh;
+    background-image: url("/images/banner.jpeg");
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
