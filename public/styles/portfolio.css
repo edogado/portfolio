@@ -334,6 +334,9 @@ body{
     border: 1px solid gray;
     border-radius: 5px;
     box-shadow: 0 1px 6px gray;
+    -webkit-box-shadow: 0 1px 6px gray;
+    -moz-box-shadow: 0 1px 6px gray;
+    -o-box-shadow: 0 1px 6px gray;
     font-size: 1rem;
     color: var(--textcolor);
 }
@@ -512,6 +515,7 @@ hr{
         row-gap: 1.25rem;
     }
     #profile-section {
+        max-width: 500px;
         grid-column: 1/2;
         grid-row: 1/2;
     }
