@@ -10,7 +10,7 @@ app.get("/", (req, res)=>{
     res.status(200).render("index")
 });
 
-app.listen(port, ()=>{
+/*app.listen(port, ()=>{
     console.log(`listening on http://localhost:${port}`)
-});
+});*/
 
