@@ -425,7 +425,10 @@ hr{
     margin-left: -1em;
 }
 
-
+#education{
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
 @media only screen and (max-width: 568px) {
     #background-image{
         font-size: 1rem!important;
@@ -504,8 +507,24 @@ hr{
 @media only screen and (max-width: 768px) {
     #resume-grid{
         width: 100%;
-        grid-template-columns: repeat(auto-fit, 1fr);
-        grid-row-gap: 1.25rem;
+        grid-template-columns: 1fr;
+        row-gap: 1.25rem;
+    }
+    #profile-section {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #work-experience{
+        max-width: 500px;
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    #education{
+        max-width: 500px;
+        grid-column: 1/2;
+        grid-row: 3/4;
     }
 }
 
