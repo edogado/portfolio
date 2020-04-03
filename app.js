@@ -10,7 +10,11 @@ app.get("/", (req, res)=>{
     res.status(200).render("index")
 });
 
-/*app.listen(port, ()=>{
+app.post("/messageSent", (req, res)=>{
+   res.send("You sent message");
+});
+
+app.listen(port, ()=>{
     console.log(`listening on http://localhost:${port}`)
-});*/
+});
 
