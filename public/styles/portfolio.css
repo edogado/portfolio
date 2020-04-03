@@ -466,7 +466,7 @@ hr{
 }
 
 #programming-languages i{
-    font-size: 10rem;
+    font-size: 8rem;
 }
 
 #html i{
@@ -501,6 +501,91 @@ hr{
     color: var(--secondarycolor);
 }
 
+#contact{
+    width: 80%;
+    margin: 2.75rem auto;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    text-align: center;
+    background-color: var(--primarycolor);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#contact h1, #contact h3{
+    padding: 2rem 2rem .5rem 2rem;
+}
+
+#contact input{
+    width: 90%;
+    font-size: 1.5rem;
+    height: 100%;
+    padding: 1rem;
+    border-top: none;
+    border-right: none;
+    border-bottom: 2px solid var(--textcolor);
+    border-left: none;
+    outline: none;
+    position: relative;
+    margin: .5rem;
+}
+
+#contact input:focus, #contact input:active, #contact textarea:focus{
+    border: 2px solid var(--secondarycolor);
+}
+
+#contact textarea{
+    min-width: 90%;
+    max-width: 90%;
+    min-height: 5rem;
+    height: 100%;
+    outline: none;
+    margin: 1rem;
+    resize: none;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+#contact input:focus::placeholder, #contact textarea:focus::placeholder{
+    color: var(--hovercolor);
+    opacity: 1; /* Firefox */
+}
+
+#contact input:focus::-ms-input-placeholder, #contact textarea:focus::placeholder{
+    color: var(--hovercolor);
+}
+
+#contact input:focus::-ms-input-placeholder, #contact textarea:focus::placeholder{
+    color: var(--hovercolor);
+}
+
+#contact input:focus::-webkit-input-placeholder, #contact textarea:focus::placeholder{
+    color: var(--hovercolor);
+}
+
+#contact input[type="submit"]{
+    width: 40%;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    margin: 2rem;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    background-color: var(--secondarycolor);
+    color: white;
+    font-weight: 600;
+}
+
+#contact input[type="submit"]:hover{
+    background-color: var(--hovercolor);
+    cursor: pointer;
+    transition: background-color ease-in 150ms;
+}
 
 @media only screen and (max-width: 568px) {
     #background-image{
