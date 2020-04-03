@@ -226,7 +226,17 @@
             <div id="responsive"><i class="fas fa-mobile-alt"></i><p>Responsive Design</p></div>
         </div>
     </section>
-    <section id="contact"></section>
+    <section id="contact">
+        <h1>Get In Touch</h1>
+        <h3>Contact me via the contact form below your idea. I am are here to answer any question.</h3>
+        <form action="/messageSent" method="POST">
+            <input type="text" placeholder="Name" name="contactName" id="contactName" title="Your Full Name" required>
+            <input type="email" placeholder="Email" name="contactEmail" id="contactEmail" title="Your Email" required>
+            <input type="text" placeholder="Subject" name="subject" id="subject" title="Why are you contacting me?">
+            <textarea name="contactMessage" id="contactMessage" placeholder="Message" title="Your Message" required></textarea>
+            <input type="submit" value="Send">
+        </form>
+    </section>
     <footer></footer>
     <script type="text/javascript" rel="script" src="scripts/portfolio.js"></script>
 </body>
