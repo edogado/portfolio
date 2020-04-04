@@ -32,7 +32,9 @@ app.post("/messageSent", (req, res)=>{
         subject: `${req.body.subject}`, // Subject line
         text: `${req.body.contactMessage}\n\n${req.body.contactEmail}`
     });
-    res.redirect("/");
+    setTimeout(()=>{
+        res.redirect("/");
+    }, 4000);
 });
 
 app.listen(port, ()=>{
