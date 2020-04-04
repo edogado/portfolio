@@ -15,6 +15,7 @@ function Hide(){
 
 
 document.addEventListener("DOMContentLoaded", ()=>{
+
     let txtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;
