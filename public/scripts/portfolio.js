@@ -1,6 +1,7 @@
 let navList = document.getElementById("nav-lists");
 let elements = document.getElementsByClassName('typewrite');//sentences for the banner
 const form = document.getElementById("contactForm");
+let modal = document.getElementById("modal");
 
 //This shows the navbar
 function Show() {
@@ -64,7 +65,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     }
 
     form.onsubmit = ()=>{
-        alert("Your message has been sent.");
-        console.log(form);
-    }
+        modal.style.display = "block";
+    };
+
 });
