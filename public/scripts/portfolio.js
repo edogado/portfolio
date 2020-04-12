@@ -1,12 +1,11 @@
 const navbar = document.getElementsByClassName("container")[0];
 let navList = document.getElementById("nav-lists");
 let navItems = document.querySelectorAll('nav ul li');
-let navLinks = document.querySelectorAll('nav ul li a');
 let elements = document.getElementsByClassName('typewrite');//sentences for the banner
 const bannerSection = document.getElementById("background-image");
-const sections = document.querySelectorAll('section');
 const form = document.getElementById("contactForm");
 let modal = document.getElementById("modal");
+const downloadResume = document.getElementsByClassName("button");
 
 //This shows the navbar
 function Show() {
@@ -79,6 +78,13 @@ document.addEventListener("DOMContentLoaded", ()=>{
         });
     });
 
+
+//---------- This adds a link for my resume when the download button is clicked ------------------
+    for (let i = 0; i < downloadResume.length; i++){
+        downloadResume[i].addEventListener("click", ()=>{
+            window.open("documents/Edgar%20Morales%20-%20Resume%202019.pdf", "_blank");
+        });
+    }
 //---------- changes the navbar background ----------------------
     const options = {
         root: null,
@@ -100,73 +106,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
     }, options);
 
     aboutObserver.observe(bannerSection);
-
-//---------- changes background of navlink when you're in the section
-    /*const sectionOptions = {
-        root: null,
-        rootMargin:'0px',
-        threshold: .8
-    };
-
-    const sectionObserver = new IntersectionObserver((entries, observer)=>{
-        entries.forEach((entry)=>{
-            if (entry.isIntersecting) {
-                switch (entry.target.id) {
-                    case "about":
-                        navLinks[1].style.backgroundColor = '#E8676B';
-                        navLinks[2].style.backgroundColor = 'transparent';
-                        navLinks[3].style.backgroundColor = 'transparent';
-                        navLinks[4].style.backgroundColor = 'transparent';
-                        sectionOptions.threshold = .2;
-                        break;
-                    case "projects":
-                        navLinks[2].style.backgroundColor = '#E8676B';
-                        navLinks[1].style.backgroundColor = 'transparent';
-                        navLinks[3].style.backgroundColor = 'transparent';
-                        navLinks[4].style.backgroundColor = 'transparent';
-                        break;
-
-                    case "contact":
-                        navLinks[4].style.backgroundColor = '#E8676B';
-                        navLinks[1].style.backgroundColor = 'transparent';
-                        navLinks[2].style.backgroundColor = 'transparent';
-                        navLinks[3].style.backgroundColor = 'transparent';
-                        break;
-
-                    default:
-                        navLinks[1].style.backgroundColor = 'transparent';
-                        navLinks[2].style.backgroundColor = 'transparent';
-                        navLinks[3].style.backgroundColor = 'transparent';
-                        navLinks[4].style.backgroundColor = 'transparent';
-                }
-            }
-        });
-    }, sectionOptions);
-
-    const resumeObserverOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: .29
-    };
-
-    const resumeObserver = new IntersectionObserver((entries)=>{
-        entries.forEach((entry)=>{
-            if (entry.isIntersecting && entry.target.id ==='resume'){
-                navLinks[3].style.backgroundColor = '#E8676B';
-                navLinks[1].style.backgroundColor = 'transparent';
-                navLinks[2].style.backgroundColor = 'transparent';
-                navLinks[4].style.backgroundColor = 'transparent';
-            }
-            else{
-                navLinks[3].style.backgroundColor = 'transparent'
-            }
-        });
-    }, resumeObserverOptions);
-
-    sections.forEach((section)=>{
-        sectionObserver.observe(section);
-        resumeObserver.observe(section)
-    });*/
 
 //---------- display a message when form is sent ----------------
     form.onsubmit = ()=>{
