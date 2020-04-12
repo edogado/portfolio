@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
 *{
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -47,32 +49,36 @@ section{
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    overflow: hidden;
     position: fixed;
     z-index: 999;
 }
 
 .container .logo {
-    max-width: 110px;
-    padding: 0 10px;
-    overflow: hidden;
+    padding: 0 .75rem;
 }
 
+.container .logo span{
+    margin: 0 0 0 .75rem;
+    font-size: 2.5rem;
+}
 .container .logo a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    height: 3.75rem;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: 'Kaushan Script', cursive;
+    letter-spacing: .18rem;
+    text-decoration: none;
+    color: var(--primarycolor);
 }
 
-.container .logo a img {
-    max-width: 100%;
-    max-height: 3.75rem;
+.initial{
+    color: var(--secondarycolor);
 }
 
 .container .navbar {
@@ -277,8 +283,13 @@ section{
     -o-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
-.project h2, .project img, .project p{
+.project h2, .project img{
     padding: 1.5% 1%;
+}
+
+.project p{
+    padding: 1.5% 1%;
+    text-align: justify;
 }
 
 .project img{
@@ -366,7 +377,7 @@ section{
     margin: 0 auto;
 }
 
-#profile-section h2{
+#profile-section h2, #work-experience h2, #education h2 {
     color: var(--secondarycolor);
     font-size: 1.4rem;
 }
@@ -689,6 +700,10 @@ footer{
         -webkit-box-flex: 1;
         -ms-flex: 1;
         flex: 1;
+    }
+
+    .container .logo a{
+        justify-content: start;
     }
 
     .container .navbar {
