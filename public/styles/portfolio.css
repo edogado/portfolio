@@ -548,6 +548,9 @@ hr{
     outline: none;
     position: relative;
     margin: .5rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 #contact input:focus, #contact input:active, #contact textarea:focus{
