@@ -2,12 +2,12 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const nodeMailer = require("nodemailer");
 const path = require("path");
-const port = "8000";
+const port = process.env.PORT || 8000;
+
 const app = express();
 
 app.use(express.static(path.join(__dirname, "public")));
 app.use(bodyParser.urlencoded({ extended: false }));
-
 
 // noinspection JSUnresolvedFunction
 app.get("/", (req, res)=>{
